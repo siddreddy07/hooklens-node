@@ -1,6 +1,6 @@
 {
   "name": "hooklens-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Webhook capture and monitoring tool",
   "main": "src/index.js",
   "type": "module",
