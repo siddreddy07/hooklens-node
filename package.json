@@ -1,10 +1,10 @@
 {
   "name": "hooklens-node",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Webhook capture and monitoring tool",
   "repository": {
     "type": "git",
-    "url": "https://github.com/siddharth-reddy07/hooklens-node.git"
+    "url": "https://github.com/siddreddy07/hooklens-node.git"
   },
   "main": "src/index.js",
   "type": "module",
