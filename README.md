@@ -25,12 +25,11 @@ HOOKLENS_PROJECT_ID=
 ```javascript
 import express from 'express';
 import { hooklens } from 'hooklens-node';
-import bodyParser from 'body-parser';
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
-const hl = hooklens({ provider: 'stripe' });
+const hl = hooklens({ provider: 'provider-name' });
 app.use('/webhook', hl.capture());
 
 app.listen(3000, () => console.log('Server running on port 3000'));
@@ -43,7 +42,7 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 | `apiKey` | `HOOKLENS_API_KEY` | Your API key (required) |
 | `baseUrl` | `HOOKLENS_BASE_URL` | Custom webhook endpoint |
 | `projectId` | `HOOKLENS_PROJECT_ID` | Project identifier |
-| `provider` | - | Webhook provider name (e.g., 'stripe', 'twilio') |
+| `provider` | - | Webhook provider name (e.g., 'stripe', 'slack', 'twilio') |
 
 ## Dashboard
 
