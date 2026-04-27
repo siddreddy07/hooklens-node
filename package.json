@@ -1,0 +1,33 @@
+{
+  "name": "hooklens-node",
+  "version": "1.0.1",
+  "description": "Webhook capture and monitoring tool",
+  "main": "src/index.js",
+  "type": "module",
+  "files": [
+    "src",
+    "scripts",
+    "README.md",
+    "package.json"
+  ],
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "keywords": [
+    "webhook",
+    "capture",
+    "monitoring"
+  ],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "node --env-file .env index.js",
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "hooklens-node": "^1.0.1"
+  }
+}
